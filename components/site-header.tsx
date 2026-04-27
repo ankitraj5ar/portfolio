@@ -10,13 +10,8 @@ const NAV_ITEMS = [
 ] as const;
 
 export function SiteHeader() {
-  const [year, setYear] = useState<number | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("");
-
-  useEffect(() => {
-    setYear(new Date().getFullYear());
-  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -33,7 +28,7 @@ export function SiteHeader() {
           if (e.isIntersecting) setActiveSection(e.target.id);
         });
       },
-      { rootMargin: "-40% 0px -55% 0px" },
+      { rootMargin: "-40% 0px -55% 0px", threshold: [0.3, 0.6, 0.9] },
     );
     sections.forEach((s) => obs.observe(s));
     return () => obs.disconnect();
@@ -42,8 +37,8 @@ export function SiteHeader() {
   return (
     <header id="site-header" className={scrolled ? "scrolled" : ""}>
       <nav>
-        <a href="#" className="nav-logo">
-          AM
+        <a href="#home" className="nav-logo">
+          A | R
         </a>
         <div className="nav-right">
           <ul className="nav-links">
@@ -59,9 +54,6 @@ export function SiteHeader() {
               </li>
             ))}
           </ul>
-          <span className="nav-year" id="nav-year" suppressHydrationWarning>
-            {year ?? ""}
-          </span>
         </div>
       </nav>
     </header>

@@ -19,10 +19,50 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Morgan — Software Engineer",
+  title:
+    "Ankit Raj | Software Engineer Portfolio (Node.js, Microservices, Kafka)",
   description:
-    "Backend engineer building reliable, scalable systems and clean APIs.",
-  generator: "v0.app",
+    "Software engineer specializing in scalable systems, microservices, Kafka, and ERP software. Explore projects and system design insights.",
+  keywords: [
+    "Software Engineer",
+    "Backend Engineer",
+    "Node.js",
+    "Microservices",
+    "Kafka",
+    "System Design",
+    "ankitraj5ar",
+  ],
+  openGraph: {
+    title:
+      "Ankit Raj | Software Engineer Portfolio (Node.js, Microservices, Kafka)",
+    description:
+      "Software engineer specializing in scalable systems, microservices, Kafka, and ERP software. Explore projects and system design insights.",
+    url: "https://ankitraj5ar.online",
+    siteName: "Ankit Raj Portfolio",
+    images: [
+      {
+        url: "/icon.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Ankit Raj | Software Engineer Portfolio (Node.js, Microservices, Kafka)",
+    description:
+      "Software engineer specializing in scalable systems, microservices, Kafka, and ERP software. Explore projects and system design insights.",
+    images: ["/icon.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://ankitraj5ar.online",
+  },
 };
 
 export default function RootLayout({

@@ -1,12 +1,13 @@
 export function SiteFooter() {
+  const year = new Date().getFullYear();
   return (
     <footer>
       <div className="footer-inner">
         <span className="footer-text">
-          © 2025 Alex Morgan. All rights reserved.
+          © {year} Ankit Raj. All rights reserved.
         </span>
         <span className="footer-text">
-          <a href="#hero">Back to top ↑</a>
+          <a href="#home">Back to top ↑</a>
         </span>
       </div>
     </footer>

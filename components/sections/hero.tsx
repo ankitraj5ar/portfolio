@@ -1,18 +1,19 @@
 export function Hero() {
   return (
-    <section id="hero" className="section">
+    <section id="home" className="section">
       <div className="hero-availability load-hidden load-animate">
         <div className="availability-dot"></div>
         <span className="availability-text">Available for work</span>
       </div>
-      <h1 className="hero-name load-hidden load-animate">
-        Alex
-        <br />
-        Morgan
-      </h1>
+      <h1 className="hero-name load-hidden load-animate">Ankit Raj</h1>
       <p className="hero-tagline load-hidden load-animate">
-        Backend engineer. I build reliable, scalable systems — and occasionally
-        obsess over clean APIs.
+        Software engineer who builds web apps, APIs, and internal tools. Curious
+        about good DX, and building things that actually solve problems. — and
+        occasionally obsess over clean{" "}
+        <code>
+          <strong>&lt;code/&gt;</strong>
+        </code>
+        .
       </p>
       <div className="hero-cta load-hidden load-animate">
         <a href="#projects" className="cta-primary">
@@ -24,7 +25,7 @@ export function Hero() {
       </div>
       <div className="hero-scroll load-hidden load-animate">
         <div className="hero-scroll-line"></div>
-        <span className="hero-scroll-text">Scroll to explore</span>
+        <span className="label">Scroll to explore</span>
       </div>
     </section>
   );
