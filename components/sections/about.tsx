@@ -1,16 +1,25 @@
 const LANGUAGES_TOOLS = [
+  "PHP",
+  "Yii2",
   "Go",
-  "Python",
+  "JavaScript",
   "TypeScript",
+  "bunJS",
+  "NodeJS",
+  "ReactJS",
+  "NextJS",
   "PostgreSQL",
+  "MySQL",
+  "MongoDB",
   "Redis",
+  "RabbitMQ",
   "Kafka",
 ];
 const INFRASTRUCTURE = [
   "Docker",
   "Kubernetes",
   "AWS",
-  "gRPC",
+  "GraphQL",
   "REST APIs",
   "System Design",
 ];
@@ -28,18 +37,21 @@ export function About() {
           </h2>
           <p className="about-para reveal reveal-delay-1">
             {
-              "I'm a backend engineer with 5+ years of experience designing and building distributed systems, APIs, and data pipelines. I care deeply about correctness, observability, and developer experience."
+              "I'm a software engineer with 3+ years of experience designing and building backend systems, APIs, and ERP platforms. I focus on scalable APIs, event-driven architecture, and distributed workflows. I care deeply about correctness, observability, and developer experience."
             }
           </p>
           <p className="about-para reveal reveal-delay-2">
-            Previously at Stripe and a fintech startup in Berlin. Now looking
-            for my next challenge — ideally on a small team tackling hard
-            infrastructure problems.
+            Currently working on an ERP platform focused on retail, MSMEs, and
+            agritech, designing systems that handle complex workflows across
+            these domains. I&apos;m especially interested in how complex
+            business workflows translate into reliable systems, and how to keep
+            them consistent, predictable, and maintainable as they evolve over
+            time.
           </p>
           <p className="about-para reveal reveal-delay-3">
-            Outside of work, I contribute to open-source projects, read
-            distributed systems papers, and try to convince people that Go is
-            underrated.
+            Outside of work, I explore system design concepts, study distributed
+            systems, and build small projects to better understand real-world
+            engineering trade-offs.
           </p>
         </div>
         <div className="reveal reveal-delay-1">

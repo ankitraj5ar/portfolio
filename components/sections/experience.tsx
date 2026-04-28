@@ -1,4 +1,5 @@
 type Job = {
+  id: number;
   company: string;
   role: string;
   period: string;
@@ -6,19 +7,22 @@ type Job = {
 
 const JOBS: Job[] = [
   {
-    company: "Stripe",
-    role: "Senior Backend Engineer · Infrastructure",
-    period: "2022 — Present",
+    id: 3,
+    company: "Dayal Infosystems",
+    role: "Senior Software Engineer",
+    period: "2026 — Present",
   },
   {
-    company: "Lano (Berlin)",
-    role: "Backend Engineer · Payments",
-    period: "2020 — 2022",
+    id: 2,
+    company: "Dayal Infosystems",
+    role: "Software Engineer",
+    period: "2023 — 2025",
   },
   {
-    company: "Freelance",
-    role: "Full Stack Developer",
-    period: "2018 — 2020",
+    id: 1,
+    company: "Spark Digital Technologies",
+    role: "Web Developer",
+    period: "2020 — 2021",
   },
 ];
 
@@ -31,7 +35,7 @@ export function Experience() {
       </h2>
       <div className="exp-strip reveal reveal-delay-2">
         {JOBS.map((job) => (
-          <div key={job.company} className="exp-row">
+          <div key={job.id} className="exp-row">
             <div>
               <div className="exp-company">{job.company}</div>
               <div className="exp-role">{job.role}</div>
