@@ -6,20 +6,30 @@ type ContactItem = {
 };
 
 const CONTACT_ITEMS: ContactItem[] = [
-  { label: "Email", text: "alex@morgan.dev ↗", href: "mailto:alex@morgan.dev" },
+  {
+    label: "Email",
+    text: "ankitraj5ar@gmail.com ↗",
+    href: "mailto:ankitraj5ar@gmail.dev",
+    external: true,
+  },
   {
     label: "LinkedIn",
-    text: "linkedin.com/in/alexmorgan ↗",
-    href: "https://linkedin.com",
+    text: "linkedin.com/in/ankitraj5ar ↗",
+    href: "https://linkedin.com/in/ankitraj5ar",
     external: true,
   },
   {
     label: "GitHub",
-    text: "github.com/alexmorgan ↗",
-    href: "https://github.com",
+    text: "github.com/ankitraj5ar ↗",
+    href: "https://github.com/ankitraj5ar",
     external: true,
   },
-  { label: "Resume", text: "Download PDF ↗", href: "/resume.pdf" },
+  {
+    label: "Resume",
+    text: "Download PDF ↗",
+    href: "/resume.pdf",
+    external: true,
+  },
 ];
 
 export function Contact() {
@@ -45,7 +55,7 @@ export function Contact() {
               <span className="contact-item-label">{item.label}</span>
               <a
                 href={item.href}
-                className="contact-item-link"
+                className="contact-item-link "
                 {...(item.external
                   ? { target: "_blank", rel: "noopener noreferrer" }
                   : {})}

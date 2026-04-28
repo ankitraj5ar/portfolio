@@ -24,7 +24,6 @@ export function Hero() {
         </a>
       </div>
       <div className="hero-scroll load-hidden load-animate">
-        <div className="hero-scroll-line"></div>
         <span className="label">Scroll to explore</span>
       </div>
     </section>
