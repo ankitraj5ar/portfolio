@@ -21,6 +21,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ankitraj5ar.online"),
   title:
     "Ankit Raj | Software Engineer Portfolio (Node.js, Microservices, Kafka)",
   description:
