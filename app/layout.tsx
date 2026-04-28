@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Sans, DM_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -74,6 +76,7 @@ export default function RootLayout({
     <html lang="en" className={`${dmSans.variable} ${dmMono.variable}`}>
       <body className="antialiased">
         {children}
+        <SpeedInsights />
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
